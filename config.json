@@ -1,0 +1,20 @@
+{
+  "base_url": "https://AUTHORIZED-TARGET.example",
+  "chat_path": "/api/chat",
+  "health_path": "/",
+  "method": "POST",
+  "headers": {
+    "Authorization": "Bearer REPLACE_WITH_TEST_TOKEN",
+    "Content-Type": "application/json"
+  },
+  "request_template": {
+    "message": "{prompt}"
+  },
+  "timeout_seconds": 20,
+  "verify_tls": true,
+  "max_requests_per_minute": 20,
+  "safe_max_prompt_chars": 4000,
+  "object_ids": [],
+  "comparison_ids": [],
+  "notes": "Use only with explicit authorization. Do not place production secrets in this file."
+}
